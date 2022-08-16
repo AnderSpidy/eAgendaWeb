@@ -22,48 +22,52 @@
 </head>
 <!--inicio da pagina-->
 <body class="bg-dark">
-  <!--inicio da navbar-->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <!--inicio do container da navbar-->
-    <div class="container-fluid">
-      <!--estilização do botao de home "EAGENDAWEB" da navebar, lembrando que o span pode "mudar"momentaneamente a estrutura de alguma tag-->
-      <a class="navbar-brand" href="../../index.html">
-        eAgenda
-        <span class="badge bg-primary text-bg-light">Web</span>
-      </a>
+ <!--inicio da navbar-->
+ <nav class="navbar navbar-expand-lg bg-light">
+  <!--inicio do container da navbar-->
+  <div class="container-fluid">
+    <!--estilização do botao de home "EAGENDAWEB" da navebar, lembrando que o span pode "mudar"momentaneamente a estrutura de alguma tag-->
+    <a class="navbar-brand" href="../../index.html">
+      eAgenda
+      <span class="badge bg-primary text-bg-light">Web</span>
+    </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tarefas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./public/tarefas/tarefa.list.html">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="#">Editar</a></li>
+            <li><a class="dropdown-item" href="#">Excluir</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/public/tarefas/tarefa.list.html">Visualizar Tarefas</a></li>
+          </ul>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Tarefas
+              Contatos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+              <li><a class="dropdown-item" href="./public/contatos/contato.create.html">Cadastrar</a></li>
               <li><a class="dropdown-item" href="#">Editar</a></li>
               <li><a class="dropdown-item" href="#">Excluir</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Visualizar Tarefas</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+              <li><a class="dropdown-item" href="/public/contatos/contato.list.html">Visualizar Contatos</a></li>
+            </ul>  
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
   <!--Inicio da pagina principal-->
   <main class="container mt-4 text-bg-dark">
 
